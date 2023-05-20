@@ -25,7 +25,7 @@ const nextSequence = () => {
 };
 const playSound = (name) => {
     var audio = new Audio();
-    audio.src = `../sounds/${name}.mp3`;
+    audio.src = `../SimonGame/sounds/${name}.mp3`;
     audio.play();
 };
 const animatePress = (currentColor) => {
