@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="build/styless.css">
+  <script type="module" src="build/js/main.js" defer></script>
+</head> 
+
+<body>
+  <div class="section">
+    <div class="container">
+      <div id="level-title">simon game</div>
+      <div class="content-game">
+        <div class="game">
+          <div class="btn starter-animation" id="green"></div>
+          <div class="btn" id="red"></div>
+          <div class="btn" id="yellow"></div>
+          <div class="btn" id="blue"></div>
+        </div>
+        <aside>
+          <div id="play">Play</div>
+          <div id="rules">See rules</div>
+          <div>higher score: <span id="score">0</span></div>
+        </aside>
+      </div>
+      <div id="rules-content" class="info hide">
+        <div class="content">
+          <p>Get ready to watch, remember, repeat! The Simon game is a game of lights and sounds in which players must
+            repeat
+            random sequences of lights and sounds played by the computer.</p>
+          <p>Experience the fun as you repeat the patterns and advance to higher levels.</p>
+          <p>Keep track of your score as you challenge friends or try to beat your own high score. Includes Simon game
+            unit and
+            instructions.</p>
+          <ul>
+            <li>Classic Simon gameplay</li>
+            <li>Follow lights and sounds</li>
+            <li>Suspense builds as sequences get longer</li>
+          </ul>
+        </div>
+        <span id="rules-close">
+          <i class="fa-solid fa-x"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
