@@ -2,14 +2,9 @@ const buttonColours:Array<string> = ["red", "blue", "green", "yellow"]
 
 let gamePattern:Array<string> = []
 let userClickedPattern:Array<string> = []
-let level:number
+let level:number = 0
 const numberStorage = localStorage.getItem('number')
 
-if (numberStorage) {
-  level = parseInt(numberStorage)
-} else {
-  level = 0
-}
 
 let started:boolean = false
 
@@ -22,8 +17,12 @@ const body = document.body as HTMLBodyElement
 const rulesButton = document.getElementById('rules') as HTMLDivElement 
 const rules = document.getElementById('rules-content') as HTMLDivElement
 const rulesButtonClose = document.getElementById('rules-close') as HTMLDivElement
-score.innerHTML = level.toString()
 
+if (numberStorage) {
+  score.innerHTML = numberStorage
+} else {
+  score.innerHTML = '0'
+}
 const nextSequence = () => {
   userClickedPattern = []
   level++

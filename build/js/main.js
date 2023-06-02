@@ -2,14 +2,8 @@
 const buttonColours = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickedPattern = [];
-let level;
+let level = 0;
 const numberStorage = localStorage.getItem('number');
-if (numberStorage) {
-    level = parseInt(numberStorage);
-}
-else {
-    level = 0;
-}
 let started = false;
 const buttons = document.querySelectorAll('.game');
 const playButton = document.getElementById('play');
@@ -20,7 +14,12 @@ const body = document.body;
 const rulesButton = document.getElementById('rules');
 const rules = document.getElementById('rules-content');
 const rulesButtonClose = document.getElementById('rules-close');
-score.innerHTML = level.toString();
+if (numberStorage) {
+    score.innerHTML = numberStorage;
+}
+else {
+    score.innerHTML = '0';
+}
 const nextSequence = () => {
     userClickedPattern = [];
     level++;
